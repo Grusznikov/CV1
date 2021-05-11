@@ -1,0 +1,218 @@
+@keyframes slide {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 50% 0;
+    }
+
+    99% {
+        background-position: 99% 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+@keyframes slider {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 100%;
+    }
+}
+
+@keyframes fly {
+    0% {
+        background-position: 0 100%
+    }
+
+    50% {
+        background-position: 0 50%;
+    }
+
+    99% {
+        background-position: 0 99%;
+    }
+
+    100% {
+        background-position: 0 100%
+    }
+}
+
+@media (max-width:720px) {
+    nav.navigation li {
+        font-size: 22px;
+    }
+
+
+    #alert {
+        width: 40vw;
+        font-size: 5vw;
+        height: 40vw;
+    }
+}
+
+@media (max-width:480px) {
+    .name pre p:first-child {
+        font-size: 2em;
+    }
+
+    .name pre p {
+        font-size: 1.6em;
+    }
+
+    .down-side-page {
+        height: 30vh;
+    }
+}
+
+.skills p {
+    font-size: 34px;
+}
+
+@media (min-width:800px) {
+    .skills {
+        font-size: 32px;
+    }
+
+    .name pre p:first-child {
+        font-size: 2.2em;
+    }
+
+    .name pre p {
+        font-size: 1.6em;
+    }
+
+    #alert {
+        width: 25vw;
+        font-size: 3vw;
+        height: 25vw;
+    }
+}
+
+@media (min-width:1200px) {
+    .name pre:first-child {
+        font-size: 1.4em;
+    }
+
+    .name pre {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width:800px) {
+    .skills {
+        font-size: 20px;
+    }
+
+    .start {
+        background: url(img/start.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        animation: slide 60s linear infinite alternate;
+    }
+
+    .aboutme {
+        background: url(img/aboutme.jpg);
+        animation: slider 35s linear infinite alternate;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .skills {
+        background: url(img/skills.jpg);
+        animation: fly 25s linear infinite alternate;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .skills p {
+        font-size: 32px;
+    }
+}
+
+@media (orientation: landscape) {
+    .aboutme {
+        animation: slider 35s alternate infinite linear;
+    }
+
+    .start {
+        background: url(img/start.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        animation: slide 60s linear infinite alternate;
+    }
+}
+
+@media (min-width:1024px) {
+    .start {
+        background: url(img/start.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        animation: slide 30s linear infinite alternate;
+    }
+
+    #alert {
+        width: 15vw;
+        font-size: 2vw;
+        height: 15vw;
+    }
+
+}
+
+@media (min-width:1300px) {
+    .start {
+        background: url(img/start.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        animation: slide 18s linear infinite alternate;
+    }
+}
+
+@media (max-width:360px) {
+    .navigation li {
+        margin: 12px 12px 0 0;
+    }
+
+    .name pre p:first-child {
+        font-size: 1.5em;
+    }
+
+    .name pre p {
+        font-size: 0.9em;
+    }
+
+    .skills p {
+        font-size: 24px;
+    }
+}
+
+.aboutme.active {
+    transform: translateX(0);
+}
+
+.aboutme {
+    transform: translateX(-100vw);
+}
+
+.skills.active2 {
+    transform: translateX(0)
+}
+
+.footer {
+    opacity: 0;
+    transition: 3s;
+}
+
+.footer.active3 {
+    opacity: 1;
+}

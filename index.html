@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans+Condensed:300|Oswald&amp;subset=latin-ext"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <meta name="author" content="Szymon Giżewski">
+    <meta name="description" content="Witam! Mam na imię Szymon i zajmuję się kodowaniem stron internetowych, zapraszam do kontaktu.">
+    <meta name="keywords" content="front-end developer,giżewski, szymon gizewski kodowanie stron internetowych, html, css, strona internetowa">
+    <title>Front End | Szymon Giżewski</title>
+</head>
+
+<body>
+    <nav class="navigation">
+        <ul class="list">
+            <li class="me">O mnie</li>
+            <li class="knowledge">Umiejętności</li>
+            <li class="contact">Kontakt</li>
+        </ul>
+    </nav>
+    <section class="start">
+        <article class="name">
+            <pre>
+            <p>szymon giżewski</p>
+            <p>projekt portfolio</p>
+            </pre>
+        </article>
+    </section>
+    <section class="aboutme">
+        <article class="description">
+            <p> Lorem ipsum dolor sit. </p>
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit id laboriosam rerum saepe commodi sed, animi unde illum temporibus a.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt rem totam veritatis adipisci quod asperiores enim provident? Debitis, explicabo itaque?.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nisi rerum perspiciatis incidunt eligendi animi officia perferendis quas modi cum, odit ea laudantium, quos sint dicta porro tenetur deserunt magnam!<p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nesciunt nobis dolores officia quis reprehenderit libero commodi deserunt fugiat? Mollitia?</p>
+        </article>
+    </section>
+    <section class="skills">
+        <p>Obsługiwane technologie</p>
+        <article class="technologies">
+            <img src="img/html.png" alt="logo html">
+            <img src="img/css.png" alt="logo css">
+            <img src="img/javascript.png" alt="logo js">
+        </article>
+    </section>
+    <footer class="down-side-page">
+        <aside class="footer">
+            <a target="_blank" href="https://github.com/Grusznikov"><i class="fab fa-github"></i></a>
+            <i class="fas fa-envelope"></i>
+            <li class="mail"></li>
+            <a target="_blank" href="https://www.linkedin.com/in/szymon-gi%C5%BCewski-a7b44717b/"><i class="fab fa-linkedin"></i></a>
+        </aside>
+    </footer>
+    <section class="popup">
+        <form class="corespondation" action="contact.php" method="post">
+            <fieldset>
+                <input placeholder="Imię i nazwisko" name="imie" type="text" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Twój e-mail" name="email" type="email" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Temat" name="temat" type="text" tabindex="3" required autofocus>
+            </fieldset>
+            <fieldset>
+                <textarea placeholder="Treść wiadomości..." name="tresc" tabindex="4" required></textarea>
+            </fieldset>
+            <fieldset>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Wysyłanie">Wyślij</button>
+            </fieldset>
+        </form>
+        <div id="alert">
+            <p>Wysłano wiadomość.</p>
+            <input type="button" id="cancel-alert" value="Ok">
+        </div>
+    </section>
+    <script src="script/jquery-3.2.1.min.js"></script>
+    <script src="script/code.js"></script>
+    <script src="script/pop-up.js"></script>
+</body>
+
+</html>

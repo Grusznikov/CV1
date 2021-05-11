@@ -1,0 +1,76 @@
+@media (orientation: portrait) {
+
+    /*
+    header nav {
+        width: 100vw;
+        justify-content: flex-end;
+        display: none;
+    }
+
+    header nav ol {
+        display: flex;
+        justify-content: flex-end;
+    }
+*/
+    /*
+ 
+    header nav ol li {
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+        min-width: 40vw;
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+        border: 1px solid white;
+    }
+
+    header nav ol li:hover {
+        background-color: #f90202;
+    }
+*/
+
+    section.contact article p {
+        font-size: 32px;
+        letter-spacing: 0;
+    }
+
+    section.technologies article {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    section.technologies article div {
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
+
+@media(orientation: landscape) {
+    header nav {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    section.technologies article div {
+        transition: .3s;
+    }
+
+    /* section.technologies article div:hover {
+        transform: scale(1.15);
+    } */
+
+    /* section.technologies article div:hover::before {
+        content: "HTML";
+        position: absolute;
+        left: 50%;
+        bottom: -20px;
+        transform: translate(-50%, -50%);
+    } */
+
+    section.about-me article {
+        width: 70%;
+        font-size: 28px;
+    }
+}
